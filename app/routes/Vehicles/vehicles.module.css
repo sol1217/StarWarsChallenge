@@ -1,0 +1,45 @@
+.vehiclesContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-image: url("https://e0.pxfuel.com/wallpapers/823/308/desktop-wallpaper-animated-stars-aesthetic-star-wars.jpg");
+}
+
+.vehiclesElements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.vehiclesMainBox {
+  margin: 10px;
+  color: white;
+  box-shadow: 0 0 10px 0 yellow;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  gap: 20px;
+
+}
+
+@media (max-width: 470px) {
+  .vehiclesMainBox{
+    width: 300px;
+    height: 550px;
+  }
+}

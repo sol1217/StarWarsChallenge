@@ -1,0 +1,80 @@
+.speciesContainer {
+  text-align: center;
+  background-image: url("https://e0.pxfuel.com/wallpapers/823/308/desktop-wallpaper-animated-stars-aesthetic-star-wars.jpg");
+}
+
+
+.species{
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px 0 white;
+  border-radius: 20px;
+  height: 400px;
+
+}
+
+
+@media (max-width: 500px) {
+  .species{
+    width: 250px;
+  }
+}
+
+.speciesElement {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 0 10px 0 yellow;
+  border-radius: 20px;
+  margin-top: 360px;
+
+  animation: appear 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 660px) {
+  .speciesElement{
+    width: 350px;
+  }
+}
+
+@media (max-width: 470px) {
+  .speciesElement{
+    width: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .speciesElement{
+    width: 280px;
+    height: 500px;
+  }
+}

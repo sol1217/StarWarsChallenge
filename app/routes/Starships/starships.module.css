@@ -1,0 +1,79 @@
+.starshipsContainer {
+  font-family: system-ui, sans-serif;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1500px;
+  margin: 30px auto;
+  background-image: url("https://e0.pxfuel.com/wallpapers/823/308/desktop-wallpaper-animated-stars-aesthetic-star-wars.jpg");
+}
+
+.starships{
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px 0 white;
+  border-radius: 20px;
+  height: 400px;
+}
+
+
+@media (max-width: 500px) {
+  .starships{
+    width: 250px;
+    padding: 35px;
+  }
+}
+
+.starshipsElement {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 0 10px 0 yellow;
+  border-radius: 20px;
+  margin-top: 360px;
+
+  animation: appear 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+@media (max-width: 730px) {
+  .starshipsElement{
+    width: 260px;
+    padding: 30px;
+    height: 480px;
+  }
+}
